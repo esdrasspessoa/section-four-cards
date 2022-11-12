@@ -1,0 +1,33 @@
+@import 'variables';
+
+%box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 0px 16px -4px rgba(0,0,0,0.55); 
+    box-shadow: -1px 0px 16px -4px rgba(0,0,0,0.55);
+    transition: 500ms;
+}
+
+%box-decoration {
+    h2{
+        font-weight: 600;
+        font-size: 17px;
+        color: $--colorPrimary;
+    }
+    p{
+        color: $--colorPrimary;
+        font-weight: 200;
+        line-height: 1.7;
+        font-size: 15px;
+    }
+    .icon {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+
+        img {
+            width: 15%;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@mixin boxes ($box) {
+    @if $box == cyan {
+        border-top: 5px solid hsl(180, 62%, 55%);
+        grid-column: 1/2;
+        grid-row: 3 /span 2;
+
+        &:hover{
+            transform: scale(1.1) 
+        }
+    }
+    @else if $box == red {
+        border-top: 5px solid hsl(0, 78%, 62%);
+        grid-column: 2/3;
+        grid-row: span 3;
+
+        &:hover{
+            transform: scale(1.1) 
+        }
+    }
+    @else if $box == blue { 
+        border-top: 5px solid hsl(212, 86%, 64%);
+        grid-column: 3;
+        grid-row: 3/ span 2;
+
+        &:hover{
+            transform: scale(1.1) 
+        }
+    }
+    @else if $box == orange {
+        border-top:5px solid hsl(34, 97%, 64%);
+        grid-column: 2 / 3;
+        grid-row: span 2;
+
+        &:hover{
+            transform: scale(1.1) 
+        }
+    }
+    @else {
+        background-color: #000000;
+    }
+}

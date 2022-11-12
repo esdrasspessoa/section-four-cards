@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.section .article .box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -1px 0px 16px -4px rgba(0, 0, 0, 0.55);
+  transition: 500ms;
+}
+
+.section .article .box h2 {
+  font-weight: 600;
+  font-size: 17px;
+  color: hsl(234deg, 12%, 34%);
+}
+.section .article .box p {
+  color: hsl(234deg, 12%, 34%);
+  font-weight: 200;
+  line-height: 1.7;
+  font-size: 15px;
+}
+.section .article .box .icon {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+.section .article .box .icon img {
+  width: 15%;
+}
+
+.section {
+  width: 1280px;
+  padding: 0 2%;
+}
+.section .content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section .content h1 {
+  color: hsl(234deg, 12%, 34%);
+}
+.section .content h1 span {
+  font-weight: 200;
+  display: block;
+}
+.section .content p {
+  color: hsl(234deg, 12%, 34%);
+  font-weight: 200;
+  max-width: 60%;
+  display: inline-block;
+}
+.section .article {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 20px;
+}
+.section .article .box1 {
+  border-top: 5px solid hsl(180deg, 62%, 55%);
+  grid-column: 1/2;
+  grid-row: 3/span 2;
+}
+.section .article .box1:hover {
+  transform: scale(1.1);
+}
+.section .article .box2 {
+  border-top: 5px solid hsl(0deg, 78%, 62%);
+  grid-column: 2/3;
+  grid-row: span 3;
+}
+.section .article .box2:hover {
+  transform: scale(1.1);
+}
+.section .article .box3 {
+  border-top: 5px solid hsl(212deg, 86%, 64%);
+  grid-column: 3;
+  grid-row: 3/span 2;
+}
+.section .article .box3:hover {
+  transform: scale(1.1);
+}
+.section .article .box4 {
+  border-top: 5px solid hsl(34deg, 97%, 64%);
+  grid-column: 2/3;
+  grid-row: span 2;
+}
+.section .article .box4:hover {
+  transform: scale(1.1);
+}
+
+/*RESPOSIVIDADE */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 30px 4%;
+  }
+  .section .content p {
+    max-width: 80%;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 1rem;
+  }
+  .section .article {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=main.css.map */
